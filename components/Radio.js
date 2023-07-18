@@ -23,6 +23,7 @@ export const Radio = ({ radioName, audioStream, isHidden }) => {
         const radio = radios[radioName];
         radio.muted = false;
         console.log(`${radioName} muted ${radio.muted}`)
+        document.title = `${radioName} - radio.spreyo.xyz`
     }
 
 
@@ -37,6 +38,7 @@ export const Radio = ({ radioName, audioStream, isHidden }) => {
         radio.play();
         console.log("new radio " + radioName + ' ' + audioStream);
         console.log(radios)
+        document.title = `${radioName} - radio.spreyo.xyz`
     }
 
 
