@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  const [ContentHidden, setContentHidden] = useState(true);
+  const [ContentHidden, setContentHidden] = useState(false);
   const [ConfirmHidden, setConfirmHidden] = useState(false);
   const [radios, setRadios] = useState([]);
   const [done, setDone] = useState(0);
@@ -58,15 +58,15 @@ export default function Home() {
         <h1>click to continue</h1>
       </div> */}
       <div id="headingDiv">
-        <h1 id="heading">radio</h1>
+        <h1 className="heading">radio</h1>
       </div>
 
 
       <div id="content" hidden={ContentHidden}>
         <>{radios.map(radio => {
-          if (radios.length == 9) {
+          
             return <><Radio radioName={radio["radioName"]} audioStream={radio["audioStream"]} isH idden={ContentHidden} /></>
-          }
+          
         })}
         </>
       </div>

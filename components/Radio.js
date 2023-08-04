@@ -61,8 +61,8 @@ export const Radio = ({ radioName, audioStream, isHidden }) => {
     }
 
     return (
-        <div className="radioCardDiv" id={radioName}>
-            <div className="radioCard">
+        <div  id={radioName}>
+            <div className="radio-div">
                 <h1 className='radioName'>{radioName}</h1>
                 <button className="controlButton" onClick={() => ControlButton()}>{buttonText}</button>
 

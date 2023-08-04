@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+body{
+  background-color: #343477;
+  display: flex;
+  justify-content: center;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.heading{
+  font-family: 'Josefin Sans';
+  text-align: center;
+  font-size: 64px
+}
+
+
+
+
+button{
+width: 60px;
+height: 30px;
+border-radius: 3px;
+border: 2px solid #565694;
+background: #343477;
+color: #8080B2;
+font-family: Montserrat;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+transform: scale(1);  
+transition: 0.2s;
+
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+button:active{
+  background: #8080B2;
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+h1{
+    font-family: Montserrat;
+    color: #8080B2;
+}
+
+.radio-div{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    /* gap: 50px; */
+    justify-content: center;
+    border-radius: 7px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #09093C;
+}
+
+.radio-div h1{
+  margin-left: 20px;
+}
+
+.radio-div button{
+  margin-left: auto;
+  margin-right: 20px;
+
+}
+
+
+
+
