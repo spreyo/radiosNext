@@ -54,9 +54,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>radios</title>
-      </Head>
       {/* <div id="confirm" onClick={() => Confirm()} hidden={ConfirmHidden}  >
         <h1>click to continue</h1>
       </div> */}
